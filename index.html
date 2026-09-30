@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alex Xu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper:  #fbfcfc;
+    --ink:    #16222c;
+    --muted:  #566672;
+    --rule:   #d7dee2;
+    --link:   #2a5b7a;
+
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:  #111a20;
+      --ink:    #e6ebee;
+      --muted:  #9dacb6;
+      --rule:   #2c3a44;
+      --link:   #8ab8d4;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --paper:  #111a20;
+    --ink:    #e6ebee;
+    --muted:  #9dacb6;
+    --rule:   #2c3a44;
+    --link:   #8ab8d4;
+  }
+
+  *, *::before, *::after { box-sizing: inherit; }
+
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Source Serif 4", Charter, "Iowan Old Style", Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 38rem;
+    margin: 0 auto;
+    padding: clamp(3rem, 9vw, 6.5rem) clamp(1.25rem, 6vw, 2rem) 5rem;
+  }
+
+  header { margin-bottom: 2.75rem; }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    line-height: 1.05;
+  }
+
+  .standfirst {
+    margin: 0.65rem 0 0;
+    font-style: italic;
+    font-size: 1.125rem;
+    color: var(--muted);
+  }
+
+  section { padding: 2.25rem 0; }
+
+  section + section { border-top: 1px solid var(--rule); }
+
+  header + section { border-top: 1px solid var(--rule); }
+
+  section:last-of-type { padding-bottom: 0; }
+
+  h2 {
+    margin: 0 0 0.85rem;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    letter-spacing: 0.005em;
+    color: var(--muted);
+  }
+
+  p { margin: 0 0 1.05rem; max-width: 34rem; }
+
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    margin: 0;
+    padding-left: 1.15rem;
+    max-width: 34rem;
+  }
+
+  li { margin-bottom: 0.6rem; }
+
+  li:last-child { margin-bottom: 0; }
+
+  a {
+    color: var(--link);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+
+  a:focus-visible {
+    outline: 2px solid var(--link);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+</style>
+</head>
+<body>
+  <main class="page">
+
+    <header>
+      <h1>Alex Xu</h1>
+      <p class="standfirst">Master&rsquo;s student in East Asian Studies</p>
+    </header>
+
+    <section>
+      <h2>About</h2>
+      <p>
+        I am a master&rsquo;s student in East Asian Studies, with a background in
+        statistics and political science. My work sits between the two: I read
+        Chinese policy and legal material closely, and I use quantitative methods
+        to test claims about it that are usually argued qualitatively.
+      </p>
+    </section>
+
+    <section>
+      <h2>Research interests</h2>
+      <p>
+        My substantive focus is data governance and AI policy in China &mdash; how
+        rules over data collection, storage, and cross-border transfer are written,
+        revised, and enforced, and what that implies for the firms and agencies
+        operating under them.
+      </p>
+      <p>
+        Methodologically I work in statistics, primarily causal inference and
+        econometric approaches: identifying plausible sources of variation in when
+        and where policy takes effect, and estimating what actually changes as a
+        result.
+      </p>
+    </section>
+
+    <section>
+      <h2>Project ideas</h2>
+      <p>
+        My current project asks how AI is reshaping data governance in China.
+        Questions I want to work through:
+      </p>
+      <ul>
+        <li>
+          Whether the push to build AI capacity loosens data rules in practice,
+          even where the formal regime tightens on paper.
+        </li>
+        <li>
+          How training-data demand changes what public and private actors are
+          willing to share, and on what terms.
+        </li>
+        <li>
+          Whether enforcement patterns shift once a firm is treated as an AI
+          developer rather than an ordinary data handler.
+        </li>
+      </ul>
+    </section>
+
+  </main>
+</body>
+</html>
