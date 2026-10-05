@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alex Xu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper:  #fbfcfc;
+    --ink:    #16222c;
+    --muted:  #566672;
+    --rule:   #d7dee2;
+    --link:   #2a5b7a;
+
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:  #111a20;
+      --ink:    #e6ebee;
+      --muted:  #9dacb6;
+      --rule:   #2c3a44;
+      --link:   #8ab8d4;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --paper:  #111a20;
+    --ink:    #e6ebee;
+    --muted:  #9dacb6;
+    --rule:   #2c3a44;
+    --link:   #8ab8d4;
+  }
+
+  *, *::before, *::after { box-sizing: inherit; }
+
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Source Serif 4", Charter, "Iowan Old Style", Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 38rem;
+    margin: 0 auto;
+    padding: clamp(3rem, 9vw, 6.5rem) clamp(1.25rem, 6vw, 2rem) 5rem;
+  }
+
+  header { margin-bottom: 2.75rem; }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    line-height: 1.05;
+  }
+
+  .standfirst {
+    margin: 0.65rem 0 0;
+    font-style: italic;
+    font-size: 1.125rem;
+    color: var(--muted);
+  }
+
+  section { padding: 2.25rem 0; }
+
+  section + section { border-top: 1px solid var(--rule); }
+
+  header + section { border-top: 1px solid var(--rule); }
+
+  section:last-of-type { padding-bottom: 0; }
+
+  h2 {
+    margin: 0 0 0.85rem;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    letter-spacing: 0.005em;
+    color: var(--muted);
+  }
+
+  p { margin: 0 0 1.05rem; max-width: 34rem; }
+
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    margin: 0;
+    padding-left: 1.15rem;
+    max-width: 34rem;
+  }
+
+  li { margin-bottom: 0.6rem; }
+
+  li:last-child { margin-bottom: 0; }
+
+  a {
+    color: var(--link);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+
+  a:focus-visible {
+    outline: 2px solid var(--link);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+</style>
+</head>
+<body>
+  <main class="page">
+
+    <header>
+      <h1>Alex Xu</h1>
+      <p class="standfirst">Master&rsquo;s student in East Asian Studies</p>
+    </header>
+
+    <section>
+      <h2>About</h2>
+      <p>
+        I am a master&rsquo;s student in East Asian Studies, with a background in
+        statistics and history.
+      </p>
+    </section>
+
+    <section>
+      <h2>Research interests</h2>
+      <ul>
+        <li>Data governance in China</li>
+        <li>AI governance in China</li>
+        <li>History of science and technology in China</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Methods</h2>
+      <ul>
+        <li>Causal inference and quasi-experimental design</li>
+        <li>Computational text analysis</li>
+        <li>Measurement and latent variable modeling</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Project ideas</h2>
+      <ul>
+        <li>
+          How is the Chinese government mobilizing public and private actors to
+          increase the supply of training data?
+        </li>
+        <li>
+          Can governments meaningfully affect AI innovation by creating
+          sector-specific, high-quality datasets through policy implementation?
+          (China case study)
+        </li>
+        <li>
+          How should national AI innovation capacity be measured quantitatively?
+          (literature review)
+        </li>
+      </ul>
+    </section>
+
+  </main>
+</body>
+</html>
